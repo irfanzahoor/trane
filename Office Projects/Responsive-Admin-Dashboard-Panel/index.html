@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard </title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <span class="logo_name">NexTash</span>
+      </div>
+
+      <div class="menu-items">
+        <ul class="nav-links">
+          <li>
+            <a href="#">
+              <i class="fab fa-microsoft"></i>
+              <span class="link-name">Dahsboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-clapperboard"></i>
+              <span class="link-name">Content</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-chart-simple"></i>
+              <span class="link-name">Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-message"></i>
+              <span class="link-name">Comments</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-closed-captioning"></i>
+              <span class="link-name">Subtitles</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-copyright"></i>
+              <span class="link-name">Copyright</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-sack-dollar"></i>
+              <span class="link-name">Earn</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-square-pen"></i>
+              <span class="link-name">Customization</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="logout-mode">
+          <li>
+            <a href="#">
+              <i class="fas fa-right-to-bracket"></i>
+              <span class="link-name">Logout</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <a href="#">
+              <i class="fas fa-moon"></i>
+              <span class="link-name">Dark Mode</span>
+            </a>
+
+            <div class="mode-toggle">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="dashboard">
+      <div class="top">
+        <i class="fas fa-bars sidebar-toggle"></i>
+
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <img src="my image.jpeg" alt="" />
+      </div>
+
+      <div class="dash-content">
+        <div class="overview">
+          <div class="title">
+            <i class="fas fa-gauge"></i>
+            <span class="text">Overview</span>
+          </div>
+
+          <div class="boxes">
+            <div class="box box1">
+              <i class="fas fa-user"></i>
+              <span class="text">Subscribers</span>
+              <span class="number">99,129</span>
+            </div>
+            <div class="box box2">
+              <i class="fas fa-eye"></i>
+              <span class="text">Views</span>
+              <span class="number">168,973</span>
+            </div>
+            <div class="box box3">
+              <i class="fas fa-clock"></i>
+              <span class="text">Watch Time</span>
+              <span class="number">256,345</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity">
+          <div class="title">
+            <i class="fas fa-clock"></i>
+            <span class="text">Recent Subscribers</span>
+          </div>
+
+          <div class="activity-data">
+            <div class="data names">
+              <span class="data-title">Name</span>
+              <span class="data-list">IrfanZahoor</span>
+              <span class="data-list">FaisalZahoor</span>
+              <span class="data-list">Muzamal</span>
+              <span class="data-list">Ali</span>
+              <span class="data-list">Abdullah</span>
+            </div>
+            <div class="data email">
+              <span class="data-title">Email</span>
+              <span class="data-list">irfanzahoor@gmail.com</span>
+              <span class="data-list">fasi@gmail.com</span>
+              <span class="data-list">muzamal@gmail.com</span>
+              <span class="data-list">rana@gmail.com</span>
+              <span class="data-list">Raja@gmail.com</span>
+            </div>
+            <div class="data subscriber">
+              <span class="data-title">Subscribers</span>
+              <span class="data-list">1.94M</span>
+              <span class="data-list">1.4M</span>
+              <span class="data-list">158K</span>
+              <span class="data-list">148K</span>
+              <span class="data-list">100K</span>
+            </div>
+            <div class="data type">
+              <span class="data-title">Action</span>
+              <span class="data-list">Subscribe</span>
+              <span class="data-list">Subscribe</span>
+              <span class="data-list">Subscribe</span>
+              <span class="data-list">Subscribe</span>
+              <span class="data-list">Subscribe</span>
+            </div>
+            <div class="data joined">
+              <span class="data-title">Subscribed</span>
+              <span class="data-list">2023-02-02</span>
+              <span class="data-list">2023-03-03</span>
+              <span class="data-list">2023-04-04</span>
+              <span class="data-list">2023-04-05</span>
+              <span class="data-list">2023-06-09</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

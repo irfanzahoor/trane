@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+
+footer a,
+p {
+  color: #fff;
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #eb2f06;
+}
+
+.content {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content .box {
+  width: 33%;
+  transition: all 0.3s ease;
+}
+
+.content .box .title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.box p {
+  text-align: justify;
+}
+
+.bottom .title {
+  margin: 24px 0 5px 0;
+}
+
+.bottom i {
+  padding-right: 16px;
+}
+
+.middle {
+  padding-left: 80px;
+}
+
+.middle a {
+  line-height: 32px;
+}
+
+.right input[type="email"] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+
+.right input[type="submit"] {
+  height: 43px;
+  width: 100%;
+  margin-top: 10px;
+  background: #eb2f06;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #eb2f06;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.right input[type="submit"]:hover {
+  background: transparent;
+  color: #eb2f06;
+}
+
+.socials a {
+  height: 45px;
+  width: 45px;
+  line-height: 43px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.socials a:hover {
+  border-color: #eb2f06;
+}
+
+.copyright {
+  width: 100%;
+  text-align: right;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.copyright a {
+  color: #eb2f06;
+}
+
+@media (max-width: 1100px) {
+  .middle {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  footer .content .box {
+    width: 50%;
+  }
+
+  footer .content .right {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  footer {
+    position: relative;
+  }
+
+  footer .content .box {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .middle {
+    padding-left: 0;
+  }
+}

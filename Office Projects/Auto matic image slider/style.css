@@ -1,0 +1,66 @@
+body{
+    background: rgba(0, 0, 0, 0.7);
+    font-family: 'Times New Roman', Times, serif;
+}
+.wrapper {
+    background: white;
+    width: 330px;
+    height: 560px;
+    border-radius: .7em;
+    box-shadow: -3px -3px 7px #ffffff73,2px 2px 5px rgba(94, 104, 121, 0.288);
+    margin: 0 auto;
+    padding: 36px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrapper .result {
+    width: 100%;
+    height: 155px;
+    box-shadow: inset 2px 2px 5px #babecc,inset -5px -5px 10px #ffffff73;
+}
+.wrapper .result p {
+    font-size: 42pt;
+    overflow-y: auto;
+    text-align: right;
+}
+.wrapper .buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid: gap 1em;
+}
+.wrapper .buttons .button, .wrapper .buttons .num-button{
+    cursor:grab;
+    text-align: center;
+    width: 65px;
+    font-size: 19px;
+    height: 65px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #babecc,
+    -5px -5px 10px #ffffff73;
+    margin: 10px;
+}
+.button:hover{
+    color: aquamarine;
+}
+
+/*  UTILITIES */
+.wrapper .buttons .zero {
+    grid-column: 1 /3;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px #babecc,-5px -5px 10px#ffffff73;
+}
+.action-btn{
+    color: gray;
+    font-weight: bold;
+}
+
+.calc-action-btn{
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+  }

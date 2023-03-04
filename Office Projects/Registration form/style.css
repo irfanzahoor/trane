@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0faff;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 470px;
+    background-color: #4070f4;
+    padding: 20px 30px 200px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .form.signup {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -86%;
+    height: 100%;
+    background-color: #fff;
+    width: calc(100% + 220px);
+    padding: 20px 140px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper.active .form.signup {
+    bottom: -15%;
+    border-radius: 30%;
+    box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .form header {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .form.signup header {
+    color: #333;
+    opacity: 0.6;
+  }
+  
+  .wrapper.active .form.signup header {
+    opacity: 1;
+  }
+  
+  .wrapper.active .form.login header {
+    opacity: 0.6;
+  }
+  
+  .wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  form input {
+    height: 60px;
+    background-color: #fff;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    padding: 0 15px;
+  }
+  
+  form a {
+    color: #fff;
+  }
+  
+  form a:hover {
+    text-decoration: underline;
+  }
+  
+  .form.signup input {
+    border: 1px solid #aaa;
+  }
+  
+  .form.signup input:focus {
+    box-shadow: 0 1px 0 #ddd;
+  }
+  
+  form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  form input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #333;
+    cursor: pointer;
+  }
+  
+  form label {
+    cursor: pointer;
+  }
+  
+  form input[type="submit"] {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: none;
+    color: #333;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+  .form.signup input[type="submit"] {
+    background-color: #4070f4;
+    border: none;
+    color: #fff;
+  }
+  
+  .form.signup input[type="submit"]:hover {
+    background-color: transparent;
+    color: #4070f4;
+    border: 1px solid #4070f4;
+  }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="result">
+          <p id="result-box">0</p>
+        </div>
+    
+    
+        <div class="buttons">
+          <div class="button action-btn" id="clear"> AC </div>
+          <div class="button action-btn"> MC</div>
+          <div class="button num-button  action-btn"> %</div>
+          <div class="button num-button  calc-action-btn"> /</div>
+          <div class="button num-button seven">7</div>
+          <div class="button num-button eight">8</div>
+          <div class="button num-button  nine">9</div>
+          <div class="button num-button  calc-action-btn">*</div>
+          <div class="button num-button  four">4</div>
+          <div class="button num-button  five">5</div>
+          <div class="button num-button  six">6</div>
+          <div class="button num-button  calc-action-btn">-</div>
+          <div class="button num-button  one">1</div>
+          <div class="button num-button  two">2</div>
+          <div class="button num-button  three">3</div>
+          <div class="button num-button  calc-action-btn">+</div>
+          <div class="button num-button  zero">0</div>
+          <div class="button num-button  point">.</div>
+          <div class="button calc-action-btn" id="total">=</div>
+        </div>
+    
+      </div>
+      <script>
+
+let btns = document.querySelectorAll(".num-button");
+let allBtns = document.querySelectorAll(".button");
+let resultBox = document.querySelector("#result-box");
+let clearBtn = document.querySelector('#clear');
+
+let total = document.querySelector("#total");
+
+let btnSpread = [...btns];
+let allBtnSpread = [...allBtns];
+
+// For Number Inputs
+btnSpread.forEach((button, i) => {
+  button.addEventListener("click", () => {
+    // Inner Values for calculator
+
+    if (resultBox.innerHTML == "0") {
+      resultBox.innerHTML = "";
+    }
+
+    let value = btns[i].innerHTML;
+    resultBox.innerHTML += value;
+  });
+});
+
+
+// Function to evalute Strings
+function evaluate(fn) {
+    return new Function('return ' + fn)();
+}
+
+// To calculate All Input
+total.addEventListener('click', ()=> {
+let allInputs = resultBox.innerHTML;
+
+resultBox.innerHTML = evaluate(allInputs);
+
+console.log(evaluate(allInputs));
+})
+
+// Clear all Inputs
+clearBtn.addEventListener('click', ()=> {
+    resultBox.innerHTML = "0";
+})
+ 
+
+</script>
+</body>
+</html>

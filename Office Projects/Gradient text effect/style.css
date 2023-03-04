@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+html,body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+.text {
+    background: linear-gradient( 135deg,#5335cf 0%,#de005e 25%,#f66e48 50%,#de005e 75%,#5335cf 100%);
+    font-size: 150px;
+    font-weight: 800;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    animation: anim 2s linear infinite;
+}
+
+@keyframes anim {
+    0% {
+      background-size: 100%;
+    }
+    100% {
+      background-size: 400%;
+    }
+  }

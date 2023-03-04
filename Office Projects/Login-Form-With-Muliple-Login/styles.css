@@ -1,0 +1,155 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: blue;
+}
+
+.main {
+  width: 365px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main .title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.main .socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.main .socials a {
+  display: block;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+.main .socials a span {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.main .socials a:first-child {
+  margin-right: 5px;
+  background: #ff4500;
+}
+
+.main .socials a:last-child {
+  margin-left: 5px;
+  background: #4267b2;
+}
+
+.main .socials a:first-child:hover {
+  background: #ff7f50;
+}
+
+.main .socials a:last-child:hover {
+  background: #375695;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form .box {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+}
+
+form .box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding-left: 45px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+form .box input:focus {
+  border-color: blue;
+}
+
+form .box .icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.options span {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.options a {
+  font-size: 16px;
+  color: #be2edd;
+  margin-left: 10px;
+}
+
+.main form .btn input {
+  padding-left: 0px;
+  background: blue;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.main form .btn input:hover {
+  background: transparent;
+  border: 1px solid blue;
+  color: #000;
+}
+
+.main form .signup {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.main form .signup a {
+  color: #be2edd;
+  transition: 0.3s;
+}
+
+.main form .signup a:hover {
+  text-decoration: underline;
+}

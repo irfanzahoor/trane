@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="magnify.css">
+    <script src="jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+        body
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background: #58A0E8;
+        }
+        #image{
+            width: 100%;
+            max-width: 350px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <img src="image1.jpg" id="image" class="zoom" data-magnify-src="image1.jpg">
+    <img src="image2.jpg" id="image" class="zoom" data-magnify-src="image2.jpg">
+    <img src="image3.jpg" id="image" class="zoom" data-magnify-src="image3.jpg">
+    
+
+    
+    <script src="jquery.magnify.js"></script>
+
+    <script>
+        $(document).ready(function() {
+          $('.zoom').magnify();
+        });
+        </script>
+
+</body>
+</html>
